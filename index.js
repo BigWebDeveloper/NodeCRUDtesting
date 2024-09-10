@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import router from "./routes/product.route.js";
 
 dotenv.config();
-const app = express();
+export default const app = express();
 const PORT = process.env.PORT || 4000;
 const URL = process.env.MongoDBURL;
 
