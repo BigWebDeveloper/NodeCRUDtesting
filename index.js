@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import router from "./routes/product.route.js";
 
 dotenv.config();
-export default app = express();
+const app = express();
 const PORT = process.env.PORT || 4000;
 const URL = process.env.MongoDBURL;
 
@@ -37,3 +37,5 @@ mongoose
   .catch(() => {
     console.log("connection failed");
   });
+
+export default app;
